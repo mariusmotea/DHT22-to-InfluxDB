@@ -23,7 +23,7 @@ Temperature and humudity logger to InfluxDB using basic circuit with esp8266 and
  
 ### Software
 
-In the header of this sketch you need to edit InfluxDB account credentials and the sensor name. Wifi credentials are setup using WiFi Manager (https://github.com/tzapu/WiFiManager). On first power on the device will remain ~1 minute alive in order to allow debug and firmware upgrades (using /update path), after this the device will go in deep sleep and will wake up every 5 minutes in order to measure and send the data to InfluxDB.
+In the header of this sketch you need to edit InfluxDB account credentials and the sensor name. Wifi credentials are setup using WiFi Manager (https://github.com/tzapu/WiFiManager). On first power on the device will remain ~1 minute alive in order to allow debug and firmware upgrades (using /update path), after this the device will go in deep sleep and will wake up every 5 minutes in order to measure and send the data to InfluxDB. ESP-M2 is based on esp8285 and has only 1MB of flash, in order to allow firmware updates select `Flash size 1MB, FS: none, OTA: 502KB`.
  
 ### The circuit
 
